@@ -80,6 +80,10 @@ public class NoteRecyclerViewAdapter extends ListAdapter<Note, NoteRecyclerViewA
         });
     }
 
+    public Note getNoteAtPosition(int position) {
+        return getItem(position);
+    }
+
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
         this.mOnItemClickListener = onItemClickListener;
     }
