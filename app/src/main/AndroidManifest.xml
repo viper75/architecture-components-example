@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Architecturecomponentsexample">
-        <activity android:name=".MainActivity">
+        <activity android:name=".views.AddEditActivity"
+            android:parentActivityName=".views.MainActivity"/>
+        <activity
+            android:name=".views.MainActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
